@@ -70,6 +70,7 @@ Additional features include full keyboard navigation, a built-in note-taking sys
     ],
     categories: ["React", "TypeScript"],
     githubLink: "https://github.com/sudhishkgopal/Sudoku",
+    image: "/images/projects/graph-sudoku.png",
   },
   {
     id: "bothunter",
@@ -93,6 +94,7 @@ The engine runs as a Pregel-style distributed system using Python's multiprocess
     ],
     categories: ["Python"],
     githubLink: "https://github.com/sudhishkgopal/BotHunter",
+    image: "/images/projects/bothunter.png",
   },
   {
     id: "ships-and-asteroids",
@@ -116,6 +118,7 @@ The rendering layer uses HTML5 Canvas with double-buffering for flicker-free ani
     ],
     categories: ["C"],
     githubLink: "https://github.com/sudhishkgopal/ships-and-asteroids",
+    image: "/images/projects/ships-and-asteroids.png",
   },
   {
     id: "garden-robot",
@@ -138,6 +141,7 @@ A lightweight web dashboard built with Python and Flask displays real-time senso
     ],
     categories: ["C++"],
     githubLink: "https://github.com/sudhishkgopal/FEHRobot",
+    image: "/images/projects/garden-robot.png",
   },
   {
     id: "hollow-knight-clone",
@@ -162,6 +166,7 @@ Developed collaboratively with a team of five as part of the OSU Software Engine
     ],
     categories: ["C#"],
     githubLink: "https://github.com/sudhishkgopal/HollowKnight_Clone",
+    image: "/images/projects/hollow-knight-clone.png",
   },
   {
     id: "serviq",
@@ -178,6 +183,7 @@ The backend is built on FastAPI with async request handling for high concurrency
     techStack: ["React", "JavaScript", "Firebase", "MapBox SDK", "HTML/CSS"],
     categories: ["React", "Firebase"],
     githubLink: "https://github.com/mayurreddy06/ServiQ",
+    image: "/images/projects/serviq.png",
   },
   {
     id: "ai-enhanced-wellness-coach",
@@ -201,6 +207,7 @@ The backend focuses on secure data ingestion and the efficient processing of hea
     ],
     categories: ["Python", "AI"],
     githubLink: "https://github.com/mayurreddy06/AI-Enhanced-Wellness-Coach",
+    image: "/images/projects/ai-wellness-coach.png",
   },
   {
     id: "amazon-clone",
@@ -224,6 +231,7 @@ The backend leverages Firebase's serverless stack — Cloud Functions for API lo
     ],
     categories: ["React", "Firebase"],
     githubLink: "https://github.com/sudhishkgopal/amazon-clone",
+    image: "/images/projects/amazon-clone.png",
   },
 ];
 

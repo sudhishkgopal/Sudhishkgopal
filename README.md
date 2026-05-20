@@ -21,7 +21,7 @@ I specialize in **Data Engineering**, **Graph Theory**, and **Generative AI**.
 |---|---|
 | **Portfolio** | [sudhishkgopal.github.io](https://sudhishkgopal.github.io/Sudhishkgopal/) |
 | **LinkedIn** | [linkedin.com/in/sudhishkgopal](https://linkedin.com/in/sudhishkgopal) |
-| **Email** | sudhish@gmail.com |
+| **Email** | sudhish.gk1@gmail.com |
 
 ---
 

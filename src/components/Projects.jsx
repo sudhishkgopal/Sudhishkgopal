@@ -79,10 +79,20 @@ export default function Projects() {
             >
               <div className="rounded-2xl border border-[#E4E4E7] bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
                 {/* Card Image / Placeholder */}
-                <div className="h-48 bg-[#F4F4F5] flex items-center justify-center overflow-hidden">
-                  <div className="text-5xl font-bold text-[#AEBAC9]/50 select-none">
-                    {project.title.charAt(0)}
-                  </div>
+                <div className="h-48 bg-[#F4F4F5] overflow-hidden">
+                  {project.image ? (
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <div className="text-5xl font-bold text-[#AEBAC9]/50 select-none">
+                        {project.title.charAt(0)}
+                      </div>
+                    </div>
+                  )}
                 </div>
 
                 {/* Card Body */}

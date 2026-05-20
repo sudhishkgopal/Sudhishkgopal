@@ -59,6 +59,17 @@ export default function ProjectDetail() {
           ))}
         </div>
 
+        {/* Hero image */}
+        {project.image && (
+          <div className="mt-10 rounded-2xl overflow-hidden border border-[#E4E4E7]">
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full object-cover max-h-[420px]"
+            />
+          </div>
+        )}
+
         {/* Divider */}
         <hr className="my-10 border-[#E4E4E7]" />
 
