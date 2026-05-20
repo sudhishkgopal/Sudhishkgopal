@@ -5,6 +5,7 @@ import DynamicNodePattern from "./components/DynamicNodePattern";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Projects from "./components/Projects";
+import AwardsLeadership from "./components/AwardsLeadership";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import ProjectDetail from "./components/ProjectDetail";
@@ -20,6 +21,7 @@ function HomePage() {
       <Experience />
       <Education />
       <Projects />
+      <AwardsLeadership />
       <Contact />
     </>
   );

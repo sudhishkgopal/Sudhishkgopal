@@ -39,7 +39,7 @@ export default function Education() {
                   The Ohio State University
                 </h3>
                 <p className="text-sm text-[#717277]">
-                  B.S. Computer Science and Engineering &middot; Expected December 2027
+                  B.S. Computer Science &amp; Mathematics &middot; Expected May 2027
                 </p>
                 <span className="inline-block mt-1.5 text-[11px] font-medium px-2.5 py-0.5 rounded-full bg-[#07080A] text-white">
                   Honors College of Engineering

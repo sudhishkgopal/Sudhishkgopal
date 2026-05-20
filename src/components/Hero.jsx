@@ -40,11 +40,12 @@ export default function Hero() {
             </h1>
 
             <p className="mt-6 text-base text-[#717277] leading-relaxed max-w-md mx-auto">
-              I’m a Computer Science and Engineering student at 
-              The Ohio State University with a passion for building 
-              efficient, impactful solutions to complex problems. 
-              I enjoy exploring diverse technologies - from AI and 
-              Graph Theory to Cloud and Web Development to create impactful software.
+              I’m a Software Developer Intern at Pyramid CDC and an
+              Honors Computer Science &amp; Mathematics student at The Ohio
+              State University with a passion for building efficient,
+              impactful solutions to complex problems. I enjoy exploring
+              diverse technologies — from AI and Graph Theory to Cloud
+              and Web Development.
             </p>
 
             {/* CTA Buttons */}

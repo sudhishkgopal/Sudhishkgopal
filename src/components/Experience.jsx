@@ -17,29 +17,35 @@ const cardFade = {
 
 const experiences = [
   {
-    role: "Backend Development Intern",
+    role: "Software Developer Intern",
+    company: "Pyramid CDC",
+    location: "Columbus, OH",
+    duration: "May 2026 – Present",
+    bullets: [],
+    tags: [],
+  },
+  {
+    role: "Back End Developer Intern",
     company: "A Better Way, Inc",
-    location: "Tampa, FL",
-    duration: "December 2025 – Present",
+    location: "Largo, FL",
+    duration: "December 2025 – May 2026",
     bullets: [
-      "Engineered a high-performance Single Page Application (SPA) with React, Vite, and React Router, abstracting the service layer to decouple UI components and prepare for a Python/Flask backend.",
-      "Architected a real-time administrative dashboard powered by Firebase Firestore, securing sensitive polling data using strict NoSQL database rules and Role-Based Access Control (RBAC).",
-      "Developed a client-side data serialization engine using JavaScript and SheetJS, enabling administrators to dynamically filter live NoSQL datasets and export them into zero-dependency CSV and XLSX reports.",
-      "Spearheaded functional testing and weekly codebase audits for the production web platform, proactively diagnosing usability bottlenecks and optimizing overall system stability."
+      "Shipped a role-protected admin dashboard in React/Vite for a civic voter survey platform, allowing authorized staff to manage and monitor a 22-question survey.",
+      "Developed a client-side CSV/XLSX export feature connected to Firebase, cutting reporting time by 40%.",
+      "Worked in an agile team, standardizing CI/CD pipelines and pull request workflows that reduced merge conflicts by 33%.",
     ],
     tags: ["JavaScript", "React", "Firebase", "Vite", "NoSQL", "SheetJS", "Git"],
   },
   {
-    role: "Undergraduate Research Assistant",
+    role: "Teaching Assistant",
     company: "Olentangy Berlin High School",
     location: "Delaware, OH",
     duration: "Jan 2024 – May 2024",
     bullets: [
-      "Developed graph-based algorithms to model and analyze large-scale network datasets.",
-      "Implemented and benchmarked ML models for classification tasks on structured data.",
-      "Co-authored research findings presented at a departmental symposium.",
+      "Achieved 90%+ pass rate on AP Computer Science exam by designing and delivering Java modules for 50+ students.",
+      "Accelerated student mastery of coding concepts, providing mentoring in object-oriented programming and programming fundamentals.",
     ],
-    tags: ["Java"],
+    tags: ["Java", "Mentoring"],
   },
 ];
 
