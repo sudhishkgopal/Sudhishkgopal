@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import DynamicNodePattern from "./components/DynamicNodePattern";
@@ -15,7 +16,6 @@ import ScratchReveal from "./components/ScratchReveal";
 function HomePage() {
   return (
     <>
-      <ScratchReveal />
       <Hero />
       <DynamicNodePattern />
       <Experience />
@@ -27,10 +27,29 @@ function HomePage() {
   );
 }
 
+function ScratchGate() {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+
+  const [showScratch] = useState(() => {
+    if (!isHome) return false;
+    const navType = window.performance?.getEntriesByType?.("navigation")?.[0]?.type;
+    const isReload = navType === "reload";
+    const scratchDone = sessionStorage.getItem("scratchDone");
+    return isReload || !scratchDone;
+  });
+
+  if (!showScratch) return null;
+  return (
+    <ScratchReveal onReveal={() => sessionStorage.setItem("scratchDone", "true")} />
+  );
+}
+
 export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <ScratchGate />
       <div className="min-h-screen bg-[#FAFAFB] text-[#07080A]">
         <Navbar />
         <main>

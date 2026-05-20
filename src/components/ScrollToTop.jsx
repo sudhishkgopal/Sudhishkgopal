@@ -5,8 +5,10 @@ export default function ScrollToTop() {
   const { pathname, state } = useLocation();
 
   useEffect(() => {
-    if (state?.scrollTo) {
-      // Coming back from a detail page — scroll to a specific section
+    const navType = window.performance?.getEntriesByType?.("navigation")?.[0]?.type;
+    const isReload = navType === "reload";
+
+    if (!isReload && state?.scrollTo) {
       setTimeout(() => {
         const el = document.getElementById(state.scrollTo);
         if (el) el.scrollIntoView({ behavior: "smooth" });
