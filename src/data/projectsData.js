@@ -166,7 +166,7 @@ Developed collaboratively with a team of five as part of the OSU Software Engine
     ],
     categories: ["C#"],
     githubLink: "https://github.com/sudhishkgopal/HollowKnight_Clone",
-    image: "/images/projects/hollow-knight-clone.png",
+    image: "/images/projects/hollow-knight-clone.jpg",
   },
   {
     id: "serviq",
