@@ -3,7 +3,9 @@
     "allow": [
       "Bash(gh api *)",
       "WebFetch(domain:github.com)",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }
