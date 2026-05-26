@@ -17,6 +17,14 @@ const cardFade = {
 
 const experiences = [
   {
+    role: "SWE Cohort",
+    company: "Snorkel AI",
+    location: "Remote",
+    duration: "May 2026 – Present",
+    bullets: [],
+    tags: [],
+  },
+  {
     role: "Software Developer Intern",
     company: "Pyramid CDC",
     location: "Columbus, OH",
