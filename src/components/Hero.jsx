@@ -1,5 +1,9 @@
-import { motion } from "framer-motion";
+import { useState, useRef, useCallback } from "react";
+import { motion, AnimatePresence, useAnimation } from "framer-motion";
 import { GooeyText } from "@/components/ui/gooey-text-morphing";
+
+const WORDS = ["Innovator", "Developer", "Builder", "Engineer", "Creator"];
+const getArticle = (word) => (/^[aeiou]/i.test(word) ? "an" : "a");
 
 const sectionFade = {
   hidden: { opacity: 0, y: 32 },
@@ -7,6 +11,31 @@ const sectionFade = {
 };
 
 export default function Hero() {
+  const [displayArticle, setDisplayArticle] = useState(getArticle(WORDS[0]));
+  const currentArticleRef = useRef(getArticle(WORDS[0]));
+  const lineControls = useAnimation();
+
+  // Fires when the gooey morph begins, before the new word is visible.
+  // Nudges the "and I'm {article}" line left or right to anticipate the
+  // article change, then swaps the article text at the peak of the nudge.
+  const handleMorphStart = useCallback((nextWord) => {
+    const nextArticle = getArticle(nextWord);
+    if (nextArticle === currentArticleRef.current) return;
+
+    // "an"→"a" is shorter so nudge left; "a"→"an" is longer so nudge right
+    const dir = nextArticle === "a" ? -1 : 1;
+    currentArticleRef.current = nextArticle;
+
+    // Keyframe: 0 → peak (35%) → back to 0 (100%), total matches morphTime
+    lineControls.start({
+      x: [0, dir * 12, 0],
+      transition: { duration: 1, times: [0, 0.35, 1], ease: "easeInOut" },
+    });
+
+    // Swap article text at the peak so it lands while the line is mid-shift
+    setTimeout(() => setDisplayArticle(nextArticle), 350);
+  }, [lineControls]);
+
   return (
     <motion.section
       id="about"
@@ -26,7 +55,6 @@ export default function Hero() {
                 alt="Sudhish K Gopal"
                 className="w-full h-full object-cover"
               />
-              {/* Subtle gradient overlay at bottom */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#07080A]/30 to-transparent" />
             </div>
           </div>
@@ -36,18 +64,36 @@ export default function Hero() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-[#07080A] leading-tight">
               Hi, I&apos;m Sudhish
               <br />
-              and I&apos;m an{" "}
+              {/* This span is what shifts — everything except the gooey word */}
+              <motion.span
+                className="inline-block"
+                animate={lineControls}
+              >
+                and I&apos;m{" "}
+                <AnimatePresence mode="wait" initial={false}>
+                  <motion.span
+                    key={displayArticle}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.15 }}
+                  >
+                    {displayArticle}
+                  </motion.span>
+                </AnimatePresence>
+              </motion.span>{" "}
               <GooeyText
-                texts={["Innovator", "Developer", "Builder", "Engineer", "Creator"]}
+                texts={WORDS}
                 morphTime={1}
                 cooldownTime={2}
                 className="text-[#AEBAC9]"
                 textClassName="font-bold text-4xl sm:text-5xl lg:text-6xl text-[#AEBAC9]"
+                onMorphStart={handleMorphStart}
               />
             </h1>
 
             <p className="mt-6 text-base text-[#717277] leading-relaxed max-w-md mx-auto">
-              I’m a Software Developer Intern at Pyramid CDC and an
+              I&apos;m a Software Developer Intern at Pyramid CDC and an
               Honors Computer Science &amp; Mathematics student at The Ohio
               State University with a passion for building efficient,
               impactful solutions to complex problems. I enjoy exploring
