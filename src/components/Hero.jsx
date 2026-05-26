@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { GooeyText } from "@/components/ui/gooey-text-morphing";
 
 const sectionFade = {
   hidden: { opacity: 0, y: 32 },
@@ -36,7 +37,13 @@ export default function Hero() {
               Hi, I&apos;m Sudhish
               <br />
               and I&apos;m an{" "}
-              <span className="text-[#AEBAC9]">Innovator</span>
+              <GooeyText
+                texts={["Innovator", "Developer", "Builder", "Engineer", "Creator"]}
+                morphTime={1}
+                cooldownTime={2}
+                className="text-[#AEBAC9]"
+                textClassName="font-bold text-4xl sm:text-5xl lg:text-6xl text-[#AEBAC9]"
+              />
             </h1>
 
             <p className="mt-6 text-base text-[#717277] leading-relaxed max-w-md mx-auto">
