@@ -22,7 +22,7 @@ const experiences = [
     location: "Redwood City, California (Remote)",
     duration: "May 2026 – Present",
     bullets: [],
-    tags: [],
+    tags: ["Python", "Machine Learning", "Flask", "AI", "React", "Vite"],
   },
   {
     role: "Software Developer Intern",
@@ -30,7 +30,7 @@ const experiences = [
     location: "Columbus, Ohio",
     duration: "May 2026 – Present",
     bullets: [],
-    tags: [],
+    tags: ["JavaScript", "React", "Vite"],
   },
   {
     role: "Back End Developer Intern",
