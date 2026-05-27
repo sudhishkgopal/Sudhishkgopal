@@ -42,7 +42,7 @@ const experiences = [
       "Built a client-side CSV/XLSX export integrating Firebase cloud services via REST, enabling stakeholders to self-serve live datasets and reducing reporting time by 40%.",
       "Collaborated in an agile workflow through functional QA and code reviews, cutting merge conflicts 33% via standardized CI/CD pipelines, branch protection, and pull request processes.",
     ],
-    tags: ["JavaScript", "React", "Firebase", "Vite", "NoSQL", "SheetJS", "Git"],
+    tags: ["JavaScript", "React", "Firebase", "Vite", "NoSQL", "SheetJS", "Git", "Agile Workflow"],
   },
   {
     role: "Teaching Assistant",
