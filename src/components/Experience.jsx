@@ -21,7 +21,9 @@ const experiences = [
     company: "Snorkel AI",
     location: "Redwood City, California (Remote)",
     duration: "May 2026 – Present",
-    bullets: [],
+    bullets: [
+      "Selected 1 of 30 contributors for Snorkel AI cohort, placing in the top percentile out of 200+ candidates evaluated on code quality, bug identification, and communication clarity.",
+    ],
     tags: ["Python", "Machine Learning", "Flask", "AI", "React", "Vite"],
   },
   {
@@ -29,7 +31,10 @@ const experiences = [
     company: "Pyramid CDC",
     location: "Columbus, Ohio",
     duration: "May 2026 – Present",
-    bullets: [],
+    bullets: [
+      "Architected a role-protected web dashboard for the Control-R IT Resource Center with separate admin and student interfaces, enforcing access-controlled views and interactive features for 50+ SMARTNet participants.",
+      "Building an AI-powered application that tracks student progress throughout SMARTNet Summer Camp, automatically generating performance-based assessments and personalized academic reports delivered directly to parents."
+    ],
     tags: ["JavaScript", "React", "Vite"],
   },
   {
