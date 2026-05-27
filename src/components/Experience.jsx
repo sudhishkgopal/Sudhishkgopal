@@ -17,9 +17,9 @@ const cardFade = {
 
 const experiences = [
   {
-    role: "SWE Cohort",
+    role: "Software Engineer Cohort",
     company: "Snorkel AI",
-    location: "Remote",
+    location: "Redwood City, California (Remote)",
     duration: "May 2026 – Present",
     bullets: [],
     tags: [],
@@ -27,7 +27,7 @@ const experiences = [
   {
     role: "Software Developer Intern",
     company: "Pyramid CDC",
-    location: "Columbus, OH",
+    location: "Columbus, Ohio",
     duration: "May 2026 – Present",
     bullets: [],
     tags: [],
@@ -35,19 +35,19 @@ const experiences = [
   {
     role: "Back End Developer Intern",
     company: "A Better Way, Inc",
-    location: "Largo, FL",
+    location: "Largo, Florida (Remote)",
     duration: "December 2025 – May 2026",
     bullets: [
-      "Shipped a role-protected admin dashboard in React/Vite for a civic voter survey platform, allowing authorized staff to manage and monitor a 22-question survey.",
-      "Developed a client-side CSV/XLSX export feature connected to Firebase, cutting reporting time by 40%.",
-      "Worked in an agile team, standardizing CI/CD pipelines and pull request workflows that reduced merge conflicts by 33%.",
+      "Shipped a role-protected admin dashboard on a React/Vite SPA for a Pinellas County civic voter survey platform, enabling staff to manage and monitor a 22 question survey across the full respondent base.",
+      "Built a client-side CSV/XLSX export integrating Firebase cloud services via REST, enabling stakeholders to self-serve live datasets and reducing reporting time by 40%.",
+      "Collaborated in an agile workflow through functional QA and code reviews, cutting merge conflicts 33% via standardized CI/CD pipelines, branch protection, and pull request processes.",
     ],
     tags: ["JavaScript", "React", "Firebase", "Vite", "NoSQL", "SheetJS", "Git"],
   },
   {
     role: "Teaching Assistant",
     company: "Olentangy Berlin High School",
-    location: "Delaware, OH",
+    location: "Delaware, Ohio",
     duration: "Jan 2024 – May 2024",
     bullets: [
       "Achieved 90%+ pass rate on AP Computer Science exam by designing and delivering Java modules for 50+ students.",
