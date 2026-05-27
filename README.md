@@ -19,7 +19,7 @@ I'm a **Software Developer Intern at Pyramid CDC** and an **Honors Computer Scie
 
 | Role | Company | Period |
 |---|---|---|
-| SWE Cohort | Snorkel AI | May 2026 – Present |
+| Software Engineer Cohort | Snorkel AI | May 2026 – Present |
 | Software Developer Intern | Pyramid CDC | May 2026 – Present |
 | Back End Developer Intern | A Better Way, Inc | Dec 2025 – May 2026 |
 | Teaching Assistant | Olentangy Berlin High School | Jan 2024 – May 2024 |
@@ -55,7 +55,7 @@ I'm a **Software Developer Intern at Pyramid CDC** and an **Honors Computer Scie
 | | |
 |---|---|
 | **GitHub** | [github.com/sudhishkgopal](https://github.com/sudhishkgopal) |
-| **LinkedIn** | [linkedin.com/in/sudhishk-gopal](https://linkedin.com/in/sudhishk-gopal) |
+| **LinkedIn** | [linkedin.com/in/sudhishkgopal](https://linkedin.com/in/sudhishkgopal) |
 | **Email** | sudhish.gk1@gmail.com |
 
 ---
