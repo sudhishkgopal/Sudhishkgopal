@@ -17,6 +17,14 @@ const cardFade = {
 
 const awards = [
   {
+    title: "Dean's List × 4",
+    event: "The Ohio State University",
+    org: "College of Engineering",
+    date: "2023 – Present",
+    description:
+      "Recognized on the Dean's List four times for maintaining academic excellence at OSU.",
+  },
+  {
     title: "1st Place — Best Use of External Data",
     event: "ASA DataFest 2026",
     org: "American Statistical Association · The Ohio State University",
